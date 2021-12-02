@@ -1,8 +1,3 @@
-body {
-  background-color: black;
-  margin: 0 auto;
-  width: 300px;
-}
 .square {
   width: 100px;
   height: 100px;
@@ -13,4 +8,47 @@ body {
   background-color: red;
   transition: 0.8s ease-in;
   transform: scale(2, 5);
+}
+.bulb {
+  margin-left: 200px;
+  width: 100px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.holder {
+  height: 30%;
+  width: 30px;
+  background-color: grey;
+}
+.globe {
+  width: 120px;
+  height: 70%;
+  border-radius: 50%;
+  margin-top: -10px;
+  background-color: white;
+  animation: 0.5s emergencyLight2 infinite ease-in-out;
+}
+@keyframes emergencyLight {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+@keyframes emergencyLight2 {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: blue;
+  }
 }
