@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #start-button {
+        background-color: blue;
+        color: white;
+        width: 100px;
+        padding: 20px;
+      }
+      #start-button:hover {
+        background-color: rgba(0, 0, 255, 0.479);
+      }
+      #start-button #contents {
+        position: absolute;
+        margin-left: 120px;
+        height: 0;
+        background-color: orange;
+      }
+      #start-button:hover #contents {
+        animation: myanimation 1s ease;
+      }
+      @keyframes myanimation {
+        from {
+          height: 1px;
+        }
+        to {
+          height: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="start-button">
+      Click me
+      <div id="contents">Lorem ipsum dolor sit amet.</div>
+    </div>
+  </body>
+</html>
