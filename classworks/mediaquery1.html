@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      #screens h1 {
+        display: none;
+      }
+      /* Device Iphone 12/13 Pro max */
+      @media screen and (width: 428px) {
+        #screens h1:nth-child(1) {
+          display: block;
+        }
+      }
+      /* Device Iphone 11 Pro max */
+      @media screen and (width: 375px) {
+        #screens h1:nth-child(2) {
+          display: block;
+        }
+      }
+      /* Device Galaxy Note 20 */
+      @media screen and (width: 412px) {
+        #screens h1:nth-child(3) {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Specify the following device name by the screen sizes</h1>
+    <ol>
+      <li>Iphone 12/13 Pro max</li>
+      <li>Iphone 11 Pro max</li>
+      <li>Galaxy Note 20</li>
+    </ol>
+    <div id="screens">
+      <h1>Iphone 12/13 Pro max</h1>
+      <h1>Iphone 11 Pro max</h1>
+      <h1>Galaxy Note 20</h1>
+    </div>
+  </body>
+</html>
