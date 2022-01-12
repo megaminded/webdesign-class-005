@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sm.css" />
+    <link rel="stylesheet" media="" href="sm.css" />
+    <style>
+      /* .border {
+        border: 1px solid red;
+      }
+      .container {
+        min-height: 500px;
+        background-color: blue;
+        opacity: 0.8;
+      }
+      .boxes {
+        height: 300px;
+        background-color: rgb(246, 78, 78);
+        opacity: 0.1;
+      } */
+      .container {
+        border: 1px solid red;
+        display: flex;
+      }
+      .border {
+        border: 1px solid yellow;
+      }
+      .boxes {
+        background-color: blue;
+        width: 400px;
+        height: 400px;
+      }
+      /* Mobile devices */
+      @media screen and (max-width: 428px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+      /* Desktop devices */
+      @media screen and (max-width: 2300px) {
+        .container {
+          flex-direction: column;
+        }
+        /* .boxes */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="boxes border"></div>
+      <div class="boxes border"></div>
+      <div class="boxes border"></div>
+      <div class="boxes border"></div>
+    </div>
+  </body>
+</html>
