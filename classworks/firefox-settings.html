@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Firefox settings</title>
+    <style>
+      .container {
+        display: flex;
+        margin: 30px;
+      }
+      .dotted-box {
+        border: 1px dotted yellow;
+        background-color: azure;
+        width: 100%;
+        height: 100px;
+      }
+      .container .column-left {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+      }
+      .container .column-left div:nth-child(1) {
+        height: 70%;
+      }
+      .container .column-left div:nth-child(2) {
+        height: 30%;
+        background-color: blueviolet;
+      }
+      .container .column-right {
+        width: 70%;
+        height: 100vh;
+      }
+      .container .column-left .main-tabs {
+        padding-top: 100px;
+      }
+      .container .column-left .main-tabs a {
+        font-size: 25px;
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+      }
+      .container .column-left .main-tabs a:hover {
+        background-color: gray;
+        cursor: default;
+      }
+      @media screen and (max-width: 830px) {
+        .container .column-left .main-tabs a span {
+          display: none;
+        }
+        .container .column-right {
+          width: 90%;
+        }
+        .container .column-left {
+          width: 10%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column-left">
+        <div class="main-tabs dotted-box">
+          <a href="">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <span>General</span>
+          </a>
+          <a href="">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <span>General</span>
+          </a>
+          <a href="">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <span>General</span>
+          </a>
+          <a href="">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <span>General</span>
+          </a>
+        </div>
+        <div class="sub-tabs dotted-box"></div>
+      </div>
+      <div class="column-right"></div>
+    </div>
+  </body>
+</html>
